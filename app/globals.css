@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fdFAF4;
+  color: #0b0a08;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #c6a15b;
+  color: #0b0a08;
+}
+
+.gold-text {
+  background: linear-gradient(100deg, #9a7b3f 0%, #e7ce8f 45%, #c6a15b 70%, #9a7b3f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-line {
+  background: linear-gradient(90deg, transparent, #c6a15b, transparent);
+  height: 1px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.9s ease both;
+}
