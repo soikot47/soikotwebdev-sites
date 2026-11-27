@@ -19,9 +19,12 @@ One Next.js app, one route per business, static export, auto-deployed on every p
   Tech stack stays the same: Next.js 14 + Tailwind, static export (`output: 'export'`).
 - Images are remote Unsplash URLs (verified live + visually checked). No binary
   assets are committed, so the repo stays pushable through the GitHub connector.
-- Components follow 21st.dev patterns, rebuilt dark to match each brand — demo #1
-  uses the 21st.dev Pricing Module pattern (3-tier cards, popular highlight, feature
-  checklists) for the bridal packages.
+- Components are REAL 21st.dev / Magic UI components, installed via the shadcn CLI
+  and rebuilt dark to match each brand — demo #1 uses Magic UI Marquee, Bento Grid,
+  Number Ticker, Blur Fade, Animated Gradient Text and Shiny Button, plus the Ruixen
+  UI Pricing Module from 21st.dev for the bridal packages (see
+  `components/ui/pricing-module.tsx` for provenance). Framer Motion powers the hero
+  entrance and scroll reveals. Never claim a hand-written grid is a 21st.dev pattern.
 
 ## Deploy
 
